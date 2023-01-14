@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+  <!-- ng-app="abc"
+        abc: duoc hieu la 1 module cua my app
+     -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body ng-controller="myController">
+    <!-- 
+        Module: la 1 container(thung chua).
+        Trong module co the bao gom cac thanh phan khac cua angular js:
+        container,directive.... 
+        Cu phap:
+        var(let/const) tenBien = angular.module("ten module",[dependency]);
+        Co 2 tham so:
+            - ten cua module
+            - Cac dependency injection (DI)
+     -->
+    <p>{{message}}</p>
+    <p>{{e}}</p>
+    <p>{{e.firstName}}</p>
+    <p>{{info}}</p>
+    <p>{{info[0]}}</p>
+    <p>{{mangObject[0].firstName}}</p>
+
+    <input type="number" ng-model="number1" />
+    <input type="number" ng-model="number2" />
+    <button ng-click="tinhTong();">Sum</button>
+    <input type="number" ng-model="tong" />
+
+    <script src="../lib/angular.js"></script>
+    <!-- Nhung cac file js duoi thu vien -->
+    <script src="index.js"></script>
+  </body>
+</html>
