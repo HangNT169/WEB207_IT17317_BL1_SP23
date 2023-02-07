@@ -9,7 +9,9 @@ myApp.config(function ($routeProvider, $locationProvider) {
       // lam gi thi lam
       // noi dung cua trang chu
       templateUrl: "pages/trang-chu.html",
-      controller: HienThiListThucVat,
+      // controller: DongVatController,
+      // HienThiListThucVat,
+      controller: HomeController,
     })
     .when("/contact", {
       // lam gi thi lam
